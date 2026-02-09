@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-terminal-background text-terminal-foreground min-h-screen font-mono;
+}
+
+a {
+  @apply text-terminal-accent hover:text-terminal-foreground transition-colors;
+}
+
+::selection {
+  background-color: rgba(0, 208, 132, 0.25);
+}
